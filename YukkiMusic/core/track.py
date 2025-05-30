@@ -21,27 +21,13 @@ class Track:
     duration: int  # duration in seconds
     streamtype: SourceType
     video: bool
+    track_id: str
+    thumb: str
 
-    thumb: str | None = None
-    download_url: str | None = (
-        None  # If provided directly used to download instead self.link
-    )
     is_live: bool | None = None
-    vidid: str | None = (
-        None  # TODO: Replace it with track_id  where it will support and mostly used in inline play mode
-    )
     file_path: str | None = None
 
     def __post_init__(self):
-        self.download_url = self.download_url if self.download_url else self.link
-        if self.is_youtube and self.vidid is None:
-            pattern = r"(?:v=|\/)([0-9A-Za-z_-]{11})"
-            p_match = re.search(pattern, self.download_url)
-            self.vidid = p_match.group(1)
-        else:
-            self.vidid = ""
-
-        self.title = self.title.title() if self.title is not None else None
         if (
             not self.duration and self.is_live is None
         ):  # WHEN is_live is not None it means no need to check it
@@ -61,9 +47,6 @@ class Track:
 
     def __setitem__(self, key, value):
         setattr(self, key, value)
-
-    async def exists(self):
-        raise NotImplementedError("This method should be overridden by the platform.")
 
     def is_youtube_stream(self) -> bool:
         return "youtube.com" in self.download_url or "youtu.be" in self.download_url
