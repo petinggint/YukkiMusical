@@ -1,4 +1,4 @@
-name: Update uv Cache
+name: Update it
 
 on:
   push:
@@ -9,6 +9,14 @@ on:
   workflow_dispatch:
 
 jobs:
+
+format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Vivekkumar-IN/assets/.github/workflows/format.yml@master
+  
+
+
   update:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
