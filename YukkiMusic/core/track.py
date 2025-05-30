@@ -1,13 +1,4 @@
-import asyncio
-import os
-import re
 from dataclasses import dataclass
-
-from yt_dlp import YoutubeDL
-
-from config import YTDOWNLOADER, cookies
-from YukkiMusic.utils.database import is_on_off
-from YukkiMusic.utils.decorators import asyncify
 
 from .enum import SourceType
 
@@ -36,7 +27,7 @@ class Track:
                 SourceType.RESSO,
                 SourceType.SPOTIFY,
                 SourceType.YOUTUBE,
-            ]: # this all platform rely on YouTube
+            ]:  # this all platform rely on YouTube
                 self.is_live = True
 
     async def __call__(self):

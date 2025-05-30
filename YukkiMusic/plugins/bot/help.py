@@ -147,7 +147,6 @@ async def help_button(client, query):
     top_text = _["help_1"]
 
     if key == "module":
-
         module, prev_page_num, close = pattern_match.group(2).split(":")
         prev_page_num = int(prev_page_num)
         close = bool(int(close))

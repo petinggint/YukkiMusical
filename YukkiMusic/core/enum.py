@@ -8,11 +8,12 @@
 # All rights reserved.
 #
 
-from enum import Enum, auto
+from enum import Enum
 
 __all__ = [
     "SourceType",
 ]
+
 
 class SourceType(Enum):
     APPLE = "Apple"
