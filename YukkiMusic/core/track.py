@@ -44,13 +44,13 @@ class Track:
         self.title = self.title.title() if self.title is not None else None
         if (
             not self.duration and self.is_live is None
-        ):  # WHEN is_live is not None it means the track is live or not live means no need to check it
+        ):  # WHEN is_live is not None it means no need to check it
             if self.streamtype in [
                 SourceType.APPLE,
                 SourceType.RESSO,
                 SourceType.SPOTIFY,
                 SourceType.YOUTUBE,
-            ]:
+            ]: # this all platform rely on YouTube
                 self.is_live = True
 
     async def __call__(self):
@@ -62,87 +62,13 @@ class Track:
     def __setitem__(self, key, value):
         setattr(self, key, value)
 
-    async def is_exists(self):
-        exists = False
+    async def exists(self):
+        raise NotImplementedError("This method should be overridden by the platform.")
 
-        if self.file_path:
-            if await is_on_off(YTDOWNLOADER):
-                exists = os.path.exists(self.file_path)
-            else:
-                exists = (
-                    len(self.file_path) > 30
-                )  # FOR m3u8 URLS for m3u8 download mode
-
-        return exists
-
-    @property
-    def is_youtube(self) -> bool:
+    def is_youtube_stream(self) -> bool:
         return "youtube.com" in self.download_url or "youtu.be" in self.download_url
-
-    @property
-    def is_m3u8(self) -> bool:
-        return self.streamtype == SourceType.M3U8
 
     async def download(
         self,
     ):
-        if (
-            self.file_path is not None and await self.is_exists()
-        ):  # THIS CONDITION FOR TELEGRAM FILES BECAUSE THESE FILES ARE ALREADY DOWNLOADED
-            return self.file_path
-
-        if await is_on_off(YTDOWNLOADER) and not (self.is_live or self.is_m3u8):
-            ytdl_opts = {
-                "format": (
-                    "(bestvideo[height<=?720][width<=?1280][ext=mp4])+(bestaudio[ext=m4a])"
-                    if self.video
-                    else "bestaudio/best"
-                ),
-                "continuedl": True,
-                "outtmpl": "downloads/%(id)s.%(ext)s",
-                "geo_bypass": True,
-                "noplaylist": True,
-                "nocheckcertificate": True,
-                "quiet": True,
-                "retries": 3,
-                "no_warnings": True,
-            }
-
-            if self.is_youtube:
-                ytdl_opts["cookiefile"] = cookies()
-
-            @asyncify
-            def _download():
-                with YoutubeDL(ytdl_opts) as ydl:
-                    info = ydl.extract_info(self.download_url, False)
-                    self.file_path = os.path.join(
-                        "downloads", f"{info['id']}.{info['ext']}"
-                    )
-
-                    if not os.path.exists(self.file_path):
-                        ydl.download([self.download_url])
-
-                    return self.file_path
-
-            return await _download()
-
-        else:
-            if self.is_m3u8:
-                return self.link or self.download_url
-
-            format_code = "b" if self.video else "bestaudio/best"  #
-            command = f'yt-dlp -g -f "{format_code}" {"--cookies " + cookies() if self.is_youtube else ""} "{self.download_url}"'
-            process = await asyncio.create_subprocess_shell(
-                command,
-                stdout=asyncio.subprocess.PIPE,
-                stderr=asyncio.subprocess.PIPE,
-            )
-            stdout, stderr = await process.communicate()
-
-            if stdout:
-                self.file_path = stdout.decode("utf-8").strip().split()[0]
-                return self.file_path
-            else:
-                raise Exception(
-                    f"Failed to get file path: {stderr.decode('utf-8').strip()}"
-                )
+        raise NotImplementedError("This method should be overridden by the platform.")
