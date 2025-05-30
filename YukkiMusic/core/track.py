@@ -13,6 +13,7 @@ class Track:
     streamtype: SourceType
     video: bool
     track_id: str
+    empty: bool
     thumb: str
 
     is_live: bool | None = None
@@ -45,4 +46,7 @@ class Track:
     async def download(
         self,
     ):
+        raise NotImplementedError("This method should be overridden by the platform.")
+
+    async def refresh(self):
         raise NotImplementedError("This method should be overridden by the platform.")
