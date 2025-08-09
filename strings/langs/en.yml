@@ -266,14 +266,14 @@ UNBAN_BUTTON: "🆓 Unban assistant"
 L_B_1: "🎶 Check out lyrics now"
 
 # Start
-S_B_1 : "🗒 Command"
-S_B_2 : "🔧 Setting"
-S_B_3 : "💬 Get Help!"
-S_B_4 : "🔔 Updates"
-S_B_5 : "✚ Add Me, Let’s Play! ✚"
-S_B_6 : "🚀 GitHub Repo"
-S_B_7 : "👑 The Creator"
-S_B_8 : "🔎 How to use? Command Menu"
+S_B_1 : "ᴄᴏᴍᴍᴀɴᴅ"
+S_B_2 : "sᴇᴛᴛɪɴɢs"
+S_B_3 : "ɢʀᴏᴜᴘ"
+S_B_4 : "ᴄʜᴀɴɴᴇʟ"
+S_B_5 : "ᴛᴀᴍʙᴀʜᴋᴀɴ sᴀʏᴀ"
+S_B_6 : "ʀᴇᴘᴏsɪᴛᴏʀʏ"
+S_B_7 : "ᴅᴇᴠᴇʟᴏᴘᴇʀ"
+S_B_8 : "ᴄᴏᴍᴍᴀɴᴅ ᴍᴇɴᴜ"
 
 #PlayMode
 PM_B_1 : "Direct play"
