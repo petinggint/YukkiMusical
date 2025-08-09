@@ -16,7 +16,7 @@ Need help setting up? Check out our detailed configuration guide: [**Configurati
 ## Deploy on Heroku
 Get started quickly by deploying to Heroku with just one click:
 
-<a href="https://dashboard.heroku.com/new?template=https://github.com/petinggint/YukkiMusic">
+<a href="https://dashboard.heroku.com/new?template=https://github.com/petinggint/YukkiMusical">
   <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="200"/>
 </a>
 
