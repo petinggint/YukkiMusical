@@ -266,14 +266,14 @@ UNBAN_BUTTON: "🆓 Unban assistant"
 L_B_1: "🎶 Check out lyrics now"
 
 # Start
-S_B_1 : "ᴄᴏᴍᴍᴀɴᴅ"
-S_B_2 : "sᴇᴛᴛɪɴɢs"
-S_B_3 : "ɢʀᴏᴜᴘ"
-S_B_4 : "ᴄʜᴀɴɴᴇʟ"
-S_B_5 : "ᴛᴀᴍʙᴀʜᴋᴀɴ sᴀʏᴀ"
-S_B_6 : "ʀᴇᴘᴏsɪᴛᴏʀʏ"
-S_B_7 : "ᴅᴇᴠᴇʟᴏᴘᴇʀ"
-S_B_8 : "ᴄᴏᴍᴍᴀɴᴅ ᴍᴇɴᴜ"
+S_B_1 : "Command"
+S_B_2 : "Settings"
+S_B_3 : "Grouo"
+S_B_4 : "Channel"
+S_B_5 : "Tambahkan Saya"
+S_B_6 : "Repository"
+S_B_7 : "Developer"
+S_B_8 : "Command menu"
 
 #PlayMode
 PM_B_1 : "Direct play"
