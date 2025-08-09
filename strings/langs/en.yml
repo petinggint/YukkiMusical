@@ -101,24 +101,24 @@ setting_15 : "Failed to resolve peer, Make sure you have added bot in your chann
 setting_16 : " What is This?\n\nWhen activated, Bot will suggest you..."
 
 # Setting Callbacks
-set_cb_1 : " Getting audio quality panel..."
-set_cb_2 : " Getting video quality panel..."
-set_cb_3 : " Getting auth users panel..."
-set_cb_4 : " Getting play mode panel..."
-set_cb_5 : " Getting clean mode panel..."
-set_cb_6 : " Setting up changes."
-set_cb_7 : " Getting auth users list.. please wait."
-set_cb_8 : " Getting back.."
+set_cb_1 : " Mendapatkan panel kualitas audio ..."
+set_cb_2 : " Mendapatkan panel kualitas video ..."
+set_cb_3 : " Mendapatkan panel pengguna auth ..."
+set_cb_4 : " Mendapatkan panel mode bermain ..."
+set_cb_5 : " Mendapatkan panel mode bersih ..."
+set_cb_6 : " Mengatur perubahan."
+set_cb_7 : " Mendapatkan daftar pengguna auth .. Harap tunggu."
+set_cb_8 : " Mendapatkan kembali .."
 
 
-ustats_1 : " No user stats found."
-ustats_2 : " You have played **{0}** tracks till now with a whopping count of **{1}** times.\n\nTop **{2}** played by you:\n\n"
+ustats_1 : " Tidak ada statistik pengguna yang ditemukan."
+ustats_2 : " Anda telah memainkan trek {0} sampai sekarang dengan jumlah kekalahan {1} kali.\n\ntop {2} dimainkan oleh Anda:\n\n"
 
 # Global Stats
-gstats_1 : " Getting global stats, this could take some time..."
-gstats_2 : " No global stats found."
-gstats_3 : " Getting global top 10 {0} of the bot, this could take some time..."
-gstats_4 : "**Total queries on bot:** {0}\n\n{1} has played **{2}** tracks till now with a whopping count of **{3}** times.\n\n**Top {4} tracks:**\n"
+gstats_1 : " Mendapatkan statistik global, ini bisa memakan waktu ..."
+gstats_2 : " Tidak ada statistik global yang ditemukan."
+gstats_3 : " Mendapatkan Global Top 10 {0} dari bot, ini bisa memakan waktu ..."
+gstats_4 : " Total kueri pada bot: {0}\n\n{1} telah memainkan {2} tracks till now with a whopping count of **{3}** times.\n\n**Top {4} tracks:**\n"
 gstats_5 : "**Top {0} chats of {1}:**\n\n"
 gstats_6 : "**Top {0} users of {1}:**\n\n"
 gstats_7 : " This chat group has played **{0}** tracks till now with a whopping count of **{1}** times.\n\nTop {2} played by this chat group:\n\n"
@@ -235,15 +235,15 @@ song_10: " Failed to upload on Telegram servers."
 song_11: " Uploading started\nPlease hold on..."
 
 # Tools - Queue
-queue_1: " » Please wait..."
+queue_1: " » Mohon Tunggu..."
 queue_2: " Queued List is empty. No tracks found."
 queue_3: "<u>**Queued Tracks:</u>**  [Checkout More Queued Tracks From Here]({0})"
-queue_4: "** Added to queue at #{0}**\n\n** Title:** {1}\n** Duration:** {2}\n** Added by:** {3} "
+queue_4: "** Menambahkan List #{0}\n\n Judul: {1}\n Durasi: {2}\n Ditambah Oleh: {3} "
 queue_5: " Only one track is in queue; add some more tracks in the queue to check the whole queue."
 
 # All Streaming Lines
-stream_1: "**✮ Started Streaming**\n\n**✯ Title:** [{0}]({1})\n**✬ Duration:** {2} minutes\n**✭ By:** {3}"
-stream_2: "➲ **Started Streaming |**\n\n**‣ Stream type:** live stream [url]\n**‣ By:** {0}"
+stream_1: " Memulai Obrolan\n\njudul: [{0}]({1})\n Durasi: {2} menit\n By: {3}"
+stream_2: "➲ Memulai Obrolan |\n\n‣ Stream type:** live stream [url]\n‣ By: {0}"
 
 V_C_1: " Fetching participants list...."
 V_C_2: "**Name:** {0}\n    **ID:** {1}\n    **Username:** {2}\n    **Video sharing:** {3}\n    **Screen sharing:** {4}\n    **Is hand raised:** {5}\n    **Muted:** {6}\n    **Speaking:** {7}\n    **Left from group:** {8}"
