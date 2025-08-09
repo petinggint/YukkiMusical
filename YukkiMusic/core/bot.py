@@ -122,10 +122,10 @@ class YukkiBot(Client):
             await self.send_message(
                 config.LOG_GROUP_ID,
                 text=(
-                    f"<u><b>{self.mention} Bot Started :</b></u>\n\n"
-                    f"Id : <code>{self.id}</code>\n"
-                    f"Name : {self.name}\n"
-                    f"Username : @{self.username}"
+                    f"<u><b>{self.mention} ʙᴏᴛ sᴛᴀʀᴛᴇᴅ :</b></u>\n\n"
+                    f"ɪᴅ : <code>{self.id}</code>\n"
+                    f"ɴᴀᴍᴇ : {self.name}\n"
+                    f"ᴜsᴇʀɴᴀᴍᴇ : @{self.username}"
                 ),
             )
         except (errors.ChannelInvalid, errors.PeerIdInvalid):
