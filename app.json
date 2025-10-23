@@ -16,17 +16,17 @@
     "env": {
       "API_ID": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "28601224",
+        "value": "28962841",
         "required": true
       },
       "API_HASH": {
         "description": "Get this value from https://my.telegram.org",
-        "value": "858363c2d32f259d09923c5bc38e0708",
+        "value": "e62a6a56b79460a3390595c979857bdf",
         "required": true
       },
       "BOT_TOKEN": {
         "description": "A Bot's token Get it from Botfather",
-        "value": "8222062294:AAGxehorRBO8R8zPp--5x4gs8sOo8B08Ems",
+        "value": "7273609693:AAEf9XWXEIe0qkyOZrcgstL23qbyFg87vHk",
         "required": true
       },
       "EXTRA_PLUGINS": {
@@ -36,22 +36,22 @@
       },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Yukki's database for you.",
-        "value": "mongodb+srv://calvinmanagement15:120802@cluster0.k0kx2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "value": "mongodb+srv://petinggint:1234@cluster0.fetmcma.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         "required": false
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "5926279915",
+        "value": "8215305975",
         "required": true
       },
       "STRING_SESSIONS": {
         "description": "A Pyrogram String Session. One Assistant is Compulsory. You Can Fill Multiple String Session Seperating With (,) comma",
-        "value": "AQHHjswACWZOwFvzC-_biE9MaACVoXzwbQzJ3L0ruMZ2edh0NvghCNxOc4UzWHq5rpdFKAG05XJViuFj9rKKvJUNIYoXXPx4ZRdBrYS_JpbMhkk6oLQhxxlsvKpVAS0GSX-7lRehF34h2vJ_CO2Xxo1ZMbcbk5fqg-iiKtV65usEYGuWyC7MjI63FYMlUrSKutIn57YFWeNQsuQvxwwcEqoRg7lY1eHepIQxykmzl1IYFlkRSLO42GyJP7_bySHAGlQinGLegvWEaCeQUIJHGP42c-dN73ga-_oH1BcW-jJoqHvaHOL6SX8vNDI98aSTLV80t6Qn87iPV6aXCkzC_n174AjvtwAAAAHE2WSKAA",
+        "value": "BQG58BkAFRYThFvB5ORbqK5M51RqICw1NLaaTna57ef1EYTLHDR1DszWh2K1WTQCNu_8vsYtaYabzWHyXyekeVZtUoVfEhIZ61gRtE3UqFWHyI8bXav6eJHzA21asLyK0HzbzaXnhC09-uJwsTYDIp7BmyZiGFCl4opmGsj_4ymqxGZHG9z5du0SbgNhHh4Lg3EOjeppXb04jpPEwpvOvt8Cow3B8WWSgYGhCeZmRNANoP5T-_qRRWB6kX9pLV2d16NhzdSRMzO7P2P5Ct1zooNO9S5QD9axz3qJghJbiV-eyzgIAVPkSVUoFnGRWYuoMHgQMcDase_Xqg6Mpk1MDcEOZujQAAAABTP_4HAA",
         "required": true
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku account's API key",
-        "value": "HRKU-AAmMyGxDbxsjYYTnK3gpURuH71pGSqSjmVYP8rNUNFPw_____wBWWB_wJ2E0",
+        "value": "",
         "required": false
       },
       "HEROKU_APP_NAME": {
@@ -61,7 +61,7 @@
       },
       "LOG_GROUP_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "-1001887222027",
+        "value": "-1003127909125",
         "required": true
       },
       "UPSTREAM_REPO": {
