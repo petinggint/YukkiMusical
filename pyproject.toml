@@ -47,7 +47,7 @@ dependencies = [
     "Flask==3.1.1",
     "gunicorn==23.0.0",
     "yt-dlp==2025.5.22",
-    "py-yt-search==0.3",
+    "py-yt-search==0.5.4",
     "PyYAML==6.0.2"
 ]
 
